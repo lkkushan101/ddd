@@ -1,0 +1,105 @@
+05:18:13,993 DEBUG ThreadSafeClientConnManager:221 – Get connection: HttpRoute[{}->http://localhost:9823], timeout = 120000
+05:18:14,003 DEBUG ConnPoolByRoute:350 – [HttpRoute[{}->http://localhost:9823]] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+05:18:14,004 DEBUG ConnPoolByRoute:523 – No free connections [HttpRoute[{}->http://localhost:9823]][null]
+05:18:14,004 DEBUG ConnPoolByRoute:369 – Available capacity: 2000 out of 2000 [HttpRoute[{}->http://localhost:9823]][null]
+05:18:14,004 DEBUG ConnPoolByRoute:549 – Creating new connection [HttpRoute[{}->http://localhost:9823]]
+05:18:14,022 DEBUG DefaultClientConnectionOperator:145 – Connecting to localhost:9823
+05:18:14,044 DEBUG RequestAddCookies:132 – CookieSpec selected: best-match
+05:18:14,061 DEBUG RequestAuthCache:75 – Auth cache not set in the context
+05:18:14,062 DEBUG DefaultHttpClient:645 – Attempt 1 to execute request
+05:18:14,062 DEBUG DefaultClientConnection:264 – Sending request: POST /session HTTP/1.1
+05:18:14,063 DEBUG wire:63 – >> "POST /session HTTP/1.1[\r][\n]"
+05:18:14,065 DEBUG wire:63 – >> "Accept: application/json, image/png[\r][\n]"
+05:18:14,066 DEBUG wire:63 – >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+05:18:14,066 DEBUG wire:63 – >> "Content-Length: 143[\r][\n]"
+05:18:14,066 DEBUG wire:63 – >> "Host: localhost:9823[\r][\n]"
+05:18:14,066 DEBUG wire:63 – >> "Connection: Keep-Alive[\r][\n]"
+05:18:14,068 DEBUG wire:63 – >> "[\r][\n]"
+05:18:14,069 DEBUG headers:268 – >> POST /session HTTP/1.1
+05:18:14,069 DEBUG headers:271 – >> Accept: application/json, image/png
+05:18:14,069 DEBUG headers:271 – >> Content-Type: application/json; charset=utf-8
+05:18:14,069 DEBUG headers:271 – >> Content-Length: 143
+05:18:14,069 DEBUG headers:271 – >> Host: localhost:9823
+05:18:14,069 DEBUG headers:271 – >> Connection: Keep-Alive
+05:18:14,070 DEBUG wire:77 – >> "{"desiredCapabilities":{"chrome.switches":[],"browserName":"chrome","chromeOptions":{"args":[],"extensions":[]},"version":"","platform":"ANY"}}"
+05:18:15,772 DEBUG wire:63 – << "HTTP/1.1 200 OK[\r][\n]"
+05:18:15,776 DEBUG wire:63 – << "Content-Length:994[\r][\n]"
+05:18:15,777 DEBUG wire:63 – << "Content-Type:application/json; charset=utf-8[\r][\n]"
+05:18:15,777 DEBUG wire:63 – << "[\r][\n]"
+05:18:15,779 DEBUG DefaultClientConnection:249 – Receiving response: HTTP/1.1 200 OK
+05:18:15,779 DEBUG headers:252 – << HTTP/1.1 200 OK
+05:18:15,779 DEBUG headers:255 – << Content-Length:994
+05:18:15,779 DEBUG headers:255 – << Content-Type:application/json; charset=utf-8
+05:18:15,787 DEBUG DefaultHttpClient:487 – Connection can be kept alive indefinitely
+05:18:15,791 DEBUG wire:77 – << "{"sessionId":"4aaf3d613209d7a6e8b960eee196d648","status":0,"value":{"acceptInsecureCerts":false,"acceptSslCerts":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","chrome":{"chromedriverVersion":"2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387)","userDataDir":"C:\\Users\\G6\\AppData\\Local\\Temp\\scoped_dir11868_2240"},"cssSelectorsEnabled":true,"databaseEnabled":false,"goog:chromeOptions":{"debuggerAddress":"localhost:56869"},"handlesAlerts":true,"hasTouchScreen":false,"javascriptEnabled":true,"locationContextEnabled":true,"mobileEmulationEnabled":false,"nativeEvents":true,"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platform":"Windows NT","proxy":{},"rotatable":false,"setWindowRect":true,"strictFileInteractability":false,"takesHeapSnapshot":true,"takesScreenshot":true,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unexpectedAlertBehaviour":"ignore","version":"71.0.3578.98","webStorageEnabled":true}}"
+05:18:15,792 DEBUG ThreadSafeClientConnManager:270 – Released connection is reusable.
+05:18:15,792 DEBUG ConnPoolByRoute:434 – Releasing connection [HttpRoute[{}->http://localhost:9823]][null]
+05:18:15,793 DEBUG ConnPoolByRoute:460 – Pooling connection [HttpRoute[{}->http://localhost:9823]][null]; keep alive indefinitely
+05:18:15,793 DEBUG ConnPoolByRoute:679 – Notifying no-one, there are no waiting threads
+05:18:15,811 DEBUG ThreadSafeClientConnManager:221 – Get connection: HttpRoute[{}->http://localhost:9823], timeout = 120000
+05:18:15,811 DEBUG ConnPoolByRoute:350 – [HttpRoute[{}->http://localhost:9823]] total kept alive: 1, total issued: 0, total allocated: 1 out of 2000
+05:18:15,811 DEBUG ConnPoolByRoute:498 – Getting free connection [HttpRoute[{}->http://localhost:9823]][null]
+05:18:15,812 DEBUG DefaultHttpClient:411 – Stale connection check
+05:18:15,813 DEBUG RequestAddCookies:132 – CookieSpec selected: best-match
+05:18:15,813 DEBUG RequestAuthCache:75 – Auth cache not set in the context
+05:18:15,814 DEBUG DefaultHttpClient:645 – Attempt 1 to execute request
+05:18:15,814 DEBUG DefaultClientConnection:264 – Sending request: POST /session/4aaf3d613209d7a6e8b960eee196d648/url HTTP/1.1
+05:18:15,814 DEBUG wire:63 – >> "POST /session/4aaf3d613209d7a6e8b960eee196d648/url HTTP/1.1[\r][\n]"
+05:18:15,815 DEBUG wire:63 – >> "Accept: application/json, image/png[\r][\n]"
+05:18:15,815 DEBUG wire:63 – >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+05:18:15,815 DEBUG wire:63 – >> "Content-Length: 30[\r][\n]"
+05:18:15,816 DEBUG wire:63 – >> "Host: localhost:9823[\r][\n]"
+05:18:15,816 DEBUG wire:63 – >> "Connection: Keep-Alive[\r][\n]"
+05:18:15,816 DEBUG wire:63 – >> "[\r][\n]"
+05:18:15,816 DEBUG headers:268 – >> POST /session/4aaf3d613209d7a6e8b960eee196d648/url HTTP/1.1
+05:18:15,817 DEBUG headers:271 – >> Accept: application/json, image/png
+05:18:15,817 DEBUG headers:271 – >> Content-Type: application/json; charset=utf-8
+05:18:15,817 DEBUG headers:271 – >> Content-Length: 30
+05:18:15,818 DEBUG headers:271 – >> Host: localhost:9823
+05:18:15,818 DEBUG headers:271 – >> Connection: Keep-Alive
+05:18:15,818 DEBUG wire:77 – >> "{"url":"http://www.google.lk"}"
+05:18:20,700 DEBUG wire:63 – << "HTTP/1.1 200 OK[\r][\n]"
+05:18:20,700 DEBUG wire:63 – << "Content-Length:72[\r][\n]"
+05:18:20,700 DEBUG wire:63 – << "Content-Type:application/json; charset=utf-8[\r][\n]"
+05:18:20,701 DEBUG wire:63 – << "[\r][\n]"
+05:18:20,701 DEBUG DefaultClientConnection:249 – Receiving response: HTTP/1.1 200 OK
+05:18:20,702 DEBUG headers:252 – << HTTP/1.1 200 OK
+05:18:20,702 DEBUG headers:255 – << Content-Length:72
+05:18:20,702 DEBUG headers:255 – << Content-Type:application/json; charset=utf-8
+05:18:20,703 DEBUG DefaultHttpClient:487 – Connection can be kept alive indefinitely
+05:18:20,703 DEBUG wire:77 – << "{"sessionId":"4aaf3d613209d7a6e8b960eee196d648","status":0,"value":null}"
+05:18:20,703 DEBUG ThreadSafeClientConnManager:270 – Released connection is reusable.
+05:18:20,704 DEBUG ConnPoolByRoute:434 – Releasing connection [HttpRoute[{}->http://localhost:9823]][null]
+05:18:20,704 DEBUG ConnPoolByRoute:460 – Pooling connection [HttpRoute[{}->http://localhost:9823]][null]; keep alive indefinitely
+05:18:20,704 DEBUG ConnPoolByRoute:679 – Notifying no-one, there are no waiting threads
+05:18:20,706 DEBUG ThreadSafeClientConnManager:221 – Get connection: HttpRoute[{}->http://localhost:9823], timeout = 120000
+05:18:20,706 DEBUG ConnPoolByRoute:350 – [HttpRoute[{}->http://localhost:9823]] total kept alive: 1, total issued: 0, total allocated: 1 out of 2000
+05:18:20,707 DEBUG ConnPoolByRoute:498 – Getting free connection [HttpRoute[{}->http://localhost:9823]][null]
+05:18:20,707 DEBUG DefaultHttpClient:411 – Stale connection check
+05:18:20,708 DEBUG RequestAddCookies:132 – CookieSpec selected: best-match
+05:18:20,708 DEBUG RequestAuthCache:75 – Auth cache not set in the context
+05:18:20,708 DEBUG DefaultHttpClient:645 – Attempt 1 to execute request
+05:18:20,709 DEBUG DefaultClientConnection:264 – Sending request: DELETE /session/4aaf3d613209d7a6e8b960eee196d648/window HTTP/1.1
+05:18:20,709 DEBUG wire:63 – >> "DELETE /session/4aaf3d613209d7a6e8b960eee196d648/window HTTP/1.1[\r][\n]"
+05:18:20,709 DEBUG wire:63 – >> "Accept: application/json, image/png[\r][\n]"
+05:18:20,710 DEBUG wire:63 – >> "Host: localhost:9823[\r][\n]"
+05:18:20,710 DEBUG wire:63 – >> "Connection: Keep-Alive[\r][\n]"
+05:18:20,710 DEBUG wire:63 – >> "[\r][\n]"
+05:18:20,710 DEBUG headers:268 – >> DELETE /session/4aaf3d613209d7a6e8b960eee196d648/window HTTP/1.1
+05:18:20,710 DEBUG headers:271 – >> Accept: application/json, image/png
+05:18:20,710 DEBUG headers:271 – >> Host: localhost:9823
+05:18:20,711 DEBUG headers:271 – >> Connection: Keep-Alive
+05:18:23,028 DEBUG wire:63 – << "HTTP/1.1 200 OK[\r][\n]"
+05:18:23,028 DEBUG wire:63 – << "Content-Length:72[\r][\n]"
+05:18:23,029 DEBUG wire:63 – << "Content-Type:application/json; charset=utf-8[\r][\n]"
+05:18:23,029 DEBUG wire:63 – << "[\r][\n]"
+05:18:23,029 DEBUG DefaultClientConnection:249 – Receiving response: HTTP/1.1 200 OK
+05:18:23,030 DEBUG headers:252 – << HTTP/1.1 200 OK
+05:18:23,030 DEBUG headers:255 – << Content-Length:72
+05:18:23,030 DEBUG headers:255 – << Content-Type:application/json; charset=utf-8
+05:18:23,031 DEBUG DefaultHttpClient:487 – Connection can be kept alive indefinitely
+05:18:23,031 DEBUG wire:77 – << "{"sessionId":"4aaf3d613209d7a6e8b960eee196d648","status":0,"value":null}"
+05:18:23,031 DEBUG ThreadSafeClientConnManager:270 – Released connection is reusable.
+05:18:23,032 DEBUG ConnPoolByRoute:434 – Releasing connection [HttpRoute[{}->http://localhost:9823]][null]
+05:18:23,032 DEBUG ConnPoolByRoute:460 – Pooling connection [HttpRoute[{}->http://localhost:9823]][null]; keep alive indefinitely
+05:18:23,032 DEBUG ConnPoolByRoute:679 – Notifying no-one, there are no waiting threads
